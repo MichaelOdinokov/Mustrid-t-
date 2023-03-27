@@ -1,11 +1,9 @@
 
-from optparse import OptionValueError
 from random import *
-from struct import pack
 from tkinter import *
 from tkinter import font # vajalik teksti fondi muutmiseks
 from math import*
-from turtle import color
+
 
 aken = Tk()
 aken.title("Tahvel")
@@ -69,7 +67,6 @@ def oval2():
 
 var1=StringVar()
 var2=StringVar()
-
 c1=Checkbutton(aken,text="Ruut",variable=var2,onvalue="Teine",offvalue="--",command=ruut)
 c2=Checkbutton(aken,text="Oval2",variable=var2,onvalue="Kolmas",offvalue="---",command=oval2) 
 
@@ -77,11 +74,6 @@ c1.grid(row=1, column=1)
 c2.grid(row=2, column=1)
 c1.deselect()
 c2.deselect()
-
-
-
-
-
 
 tahvel.grid()
 aken.mainloop()
