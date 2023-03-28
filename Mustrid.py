@@ -36,12 +36,12 @@ def oval():
 #Muster ruut
 def ruut():
     for rida in range(8):
-        for veerg in range(8):
-            x0 = veerg * 80
+        for v in range(8):
+            x0 = v * 80
             y0 = rida * 80
             x1 = x0 + 80
             y1 = y0 + 80
-            if (rida + veerg) % 2 == 0:
+            if (rida + v) % 2 == 0:
                 tahvel.create_rectangle(x0, y0, x1, y1, width=1, fill="white")
             else:
                 tahvel.create_rectangle(x0, y0, x1, y1, width=1, fill="black")
